@@ -13,7 +13,7 @@ The results of the stock analysis performed can be seen in the two charts above 
 
 ![Original Code](Resources/Original_Code.png)
 
-We were able to process the over 3000 rows of data and get this analysis within seconds thanks to our use of a VBA script. In our original code, we processed the data using a nested For loop which runs through all the rows of each stock and ascertains its starting and ending price and sums up its total daily volumes. The percentage return for each stock is then calculated with by dividing the ending price by the starting price and subtracting 1. The two calculated values for each stock are then added to the All Stocks Analysis worksheet before moving on to the calculations for the next stock. This approach can be seen in the code on the image above.
+We were able to process the over 3000 rows of data and get this analysis within seconds thanks to our use of a VBA script. In our original code, we processed the data using a nested For loop which runs through all the rows of each stock and ascertains its starting and ending price and sums up its total daily volumes. The percentage return for each stock is then calculated by dividing the ending price by the starting price and subtracting 1. The two calculated values for each stock are then added to the All Stocks Analysis worksheet before moving on to the calculations for the next stock. This approach can be seen in the code on the image above.
 
 ![Refactored Code](Resources/Refactored_Code.png)
 
