@@ -15,7 +15,7 @@ The results of the stock analysis performed can be seen in the two charts above 
 
 We were able to process the over 3000 rows of data and get this analysis within seconds thanks to our use of a VBA script. In our original code, we processed the data using a nested For loop which runs through all the rows of each stock and ascertains its starting and ending price and sums up its total daily volumes. The percentage return for each stock is then calculated by dividing the ending price by the starting price and subtracting 1. The two calculated values for each stock are then added to the All Stocks Analysis worksheet before moving on to the calculations for the next stock. This approach can be seen in the code on the image above.
 
-![Refactored Code](Resources/Refactored_Code.png)
+![Refactored Code Redo](Resources/Refactored_Code_Redo.png)
 
 We refactored our original code with the hopes of making the script run faster so that we can eventually handle larger data sets. The refactored code runs on the same logical premise of a nested For loop. However, in order to avoid the time consuming process of switching from the data worksheet to the analysis worksheet in between every stock, we created three sets of arrays to hold our data before adding it all to the analysis worksheet at once. Consequently, we again used our nested For loop to ascertain the starting price, ending price, and total volume of each stock, but this time we stored each of these values in their own array, as can be seen in the code above. We then used a final For loop to input the data from the arrays into the All Stocks Analysis worksheet, as can be seen in the code below.
 
