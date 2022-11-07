@@ -17,9 +17,7 @@ We were able to process the over 3000 rows of data and get this analysis within 
 
 ![Refactored Code Redo](Resources/Refactored_Code_Redo.png)
 
-We refactored our original code with the hopes of making the script run faster so that we can eventually handle larger data sets. The refactored code runs on the same logical premise of a nested For loop. However, in order to avoid the time consuming process of switching from the data worksheet to the analysis worksheet in between every stock, we created three sets of arrays to hold our data before adding it all to the analysis worksheet at once. Consequently, we again used our nested For loop to ascertain the starting price, ending price, and total volume of each stock, but this time we stored each of these values in their own array, as can be seen in the code above. We then used a final For loop to input the data from the arrays into the All Stocks Analysis worksheet, as can be seen in the code below.
-
-Finally, we also saved time by adding a Exit For line which told our program to stop running through the list once it got to the end of the selected stock, instead of running through the entire list for every single stock analysis. 
+We refactored our original code with the hopes of making the script run faster so that we can eventually handle larger data sets. The refactored code only loops through the data a single time while storing the total volume, starting price, and ending price in separate arrays which are then printed in one sweep on the analysis worksheet. This approach allows us to save time by not having to run through the data separately for each stock, as well as not having to switch between the data worksheet and the analysis worksheet to print the result of each stock. The For loop collecting the necessary data can be seen in the code snippet above, while the For loop printing the data from the arrays onto the analysis worksheet can be seen below.
 
 ![Refactored Code 2](Resources/Refactored_Code_2.png)
 
